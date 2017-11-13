@@ -7,7 +7,7 @@ function generateMatrix(rows,columns)
 	var matrix 	= document.getElementById('matrix');
 	var input 	= document.getElementById('usr-input');
 	
-	//Making buttons "CALCULATE-V1" and "CALCULATE-V2" visible to the user
+	//Making buttons "FIXED" and "VARIADIC" visible to the user
 	button[0].style.visibility = "visible";
 	button[1].style.visibility = "visible";
 
