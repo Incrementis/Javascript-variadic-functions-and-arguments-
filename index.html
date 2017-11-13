@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>variadic functions and arguments</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE: 
+		Because of the shortness of the html code
+		and demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling. 
+		
+		Some tag attributes are put into new lines, to keep them more visible.
+	-->
+	
+	
+	<body>
+	
+		<h2>Generate Matrix NxM</h2>
+	
+		<section>
+		
+			<ul style="border: 1px solid green; width:200px; padding:30px;background-color:#D7ECFF">
+			
+				<li>
+					N - Rows 
+				</li>
+				<input type="number" name="product" min="1" value="1">
+				
+				
+				<br>
+				<br>
+				<li>
+					M - Columns 
+				</li>
+				<input type="number" name="product" min="1" value="1">
+				
+				<br>
+				<br>
+				<!--
+					NOTE: 
+					The arguments in the function "generateMatrix" are the values taken 
+					from input "N - Colums" and input "NM - Rows".
+					This is not a very clean coding style, because it makes the code readability difficult.
+					It serves here only for demonstration purposes!
+				-->
+				<button type="button" 
+				onclick="generateMatrix(document.getElementsByName('product')[0].value, document.getElementsByName('product')[1].value);">
+				
+					GENERATE
+				
+				</button>
+			
+			</ul>
+			
+			<!--The width supports only a 10x10 Matrix-->
+			<div style="border: 1px solid green; width:365px; margin-bottom:15px; padding:20px;background-color:#e9d0e1">
+			
+				<div id="matrix"></div>
+				
+				
+				<br>
+				<br>
+				<button class="btnCALC" type="button" onclick="Calculate(true,false);" style="visibility:hidden;">
+				
+					FIXED
+				
+				</button>
+				
+
+
+				<br>
+				<br>
+				<textarea id="usr-input" style="visibility:hidden;" rows = "3" cols = "40" >
+				alert(calcAverage(1,2,3));
+				</textarea>
+
+				<button class="btnCALC" type="button" onclick="Calculate(false,true);" style="visibility:hidden;">
+				
+					VARIADIC
+				
+				</button>
+			
+			</div>
+			
+
+			<div 
+			id="result" 
+			style="border: 1px solid green; width:200px; padding:20px;background-color:#68FFA7">
+				
+				
+				
+			</div>
+		
+		</section>
+	
+		
+	
+		<br>
+		<br>
+		--------------------------------------------------------------------------------------------------
+		<br>
+		<br>
+		For more explanation please visit -
+		<a href = "https://github.com/Incrementis/Javascript-variadic-functions-and-arguments-/wiki"> 
+		variadic functions and arguments Wiki</a>
+		
+
+		
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "arguments.js"></script> 
+
+</html>
