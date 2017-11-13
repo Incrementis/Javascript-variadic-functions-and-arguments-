@@ -29,8 +29,8 @@ function generateMatrix(rows,columns)
 		ROW: x x x x x x
 		
 		COLUMN:	x
-				x
-				x
+			x
+			x
 	*/
 	for(var row = 0; row < rows; row++)
 	{
@@ -54,7 +54,7 @@ function generateMatrix(rows,columns)
 //Purpose: Shows the calculated result in Browser
 function Calculate(fixed, variadic)
 {
-	var result 		= document.getElementById('result');
+	var result 	= document.getElementById('result');
 	var usrInput 	= document.getElementById('usr-input').value;
 	
 	//After the matrix is generated, its elements should be accessible
@@ -89,7 +89,7 @@ function Calculate(fixed, variadic)
 */
 function calcAverageOfMatrix(matrix)
 {
-	var sum 		= 0;
+	var sum 	= 0;
 	var quantity 	= matrix.length;
 	
 	
